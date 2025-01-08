@@ -14,7 +14,10 @@ RUN apk add --no-cache coreutils
 # RUN dd if=/dev/urandom of=/data/tmp.file.bin bs=128MB count=80
 
 # 5GB
-RUN dd if=/dev/urandom of=/data/tmp.file.bin bs=128MB count=40
+# RUN dd if=/dev/urandom of=/data/tmp.file.bin bs=128MB count=40
+
+# 4GB
+RUN dd if=/dev/urandom of=/data/tmp.file.bin bs=128MB count=32
 
 # 2.5GB
 # RUN dd if=/dev/urandom of=/data/tmp.file.bin bs=128MB count=20
