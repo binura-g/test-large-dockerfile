@@ -16,8 +16,11 @@ RUN apk add --no-cache coreutils
 # 5GB
 # RUN dd if=/dev/urandom of=/data/tmp.file.bin bs=128MB count=40
 
+# 2.5GB
+RUN dd if=/dev/urandom of=/data/tmp.file.bin bs=128MB count=20
+
 # 1.28GB
-RUN dd if=/dev/urandom of=/data/tmp.file.bin bs=128MB count=10
+# RUN dd if=/dev/urandom of=/data/tmp.file.bin bs=128MB count=10
 
 RUN adduser \
   --disabled-password \
